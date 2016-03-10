@@ -13,7 +13,7 @@ Additional informations about DBSCAN can be found [on Wiki](https://en.wikipedia
 - Testing CSVs included
 - Python 2 & 3 compatibility
 
-## Exampke output
+## Example output
 
 ```
 $ python3.4 ./dbscan.py
