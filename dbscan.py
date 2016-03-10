@@ -6,6 +6,7 @@ Created by Ing. Lumír Balhar (@lumirbalhar)
 March 10, 2016
 '''
 
+from __future__ import print_function
 from math import sqrt
 import matplotlib.pyplot as plt
 
