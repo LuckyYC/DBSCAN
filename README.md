@@ -30,3 +30,5 @@ Drawing cluster 9 with 4 points
 Drawing cluster 10 with 3 points
 Drawing cluster 11 with 2 points
 ```
+
+![Example visualization](screen.png?raw=true)
