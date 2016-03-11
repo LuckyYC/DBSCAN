@@ -55,7 +55,7 @@ class DBSCAN():
     def regionQuery(self, givenPoint):
         result = []
         for point in self.dataset:
-            if (((point.x - givenPoint.x)**2 + (point.y - givenPoint.y)**2)**0.5) <= self.eps:
+            if point.distance(givenPoint) <= self.eps:
                 result.append(point)
 
         return result
