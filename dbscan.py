@@ -114,11 +114,11 @@ class Point():
         return "[%.2f, %.2f]" % (self.x, self.y)
 
 
-def load_dataset(name):
+def load_dataset(name, separator=','):
     result = []
     with open(name, 'r') as dataset:
         for line in dataset:
-            parts = line.strip().split(',')
+            parts = line.strip().split(separator)
             result.append(Point(parts[0], parts[1]))
     return result
 
