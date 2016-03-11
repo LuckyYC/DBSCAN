@@ -12,6 +12,9 @@ import matplotlib.pyplot as plt
 
 
 class DBSCAN():
+    '''
+    Class for DBSCAN algorithm
+    '''
     def __init__(self, dataset=None, eps=2.0, minPts=2):
         self.dataset = dataset
         self.eps = eps
@@ -78,6 +81,9 @@ class DBSCAN():
 
 
 class Cluster():
+    '''
+    Class for custer representation
+    '''
     def __init__(self, points):
         if isinstance(points, list):
             self.points = points
@@ -95,6 +101,9 @@ class Cluster():
 
 
 class Point():
+    '''
+    Class for point representation
+    '''
     def __init__(self, x, y):
         self.x = float(x)
         self.y = float(y)
@@ -115,6 +124,9 @@ class Point():
 
 
 def load_dataset(name, separator=','):
+    '''
+    Load dataset from CSV to array of Point() objects
+    '''
     result = []
     with open(name, 'r') as dataset:
         for line in dataset:
@@ -124,6 +136,9 @@ def load_dataset(name, separator=','):
 
 
 def cycle_color(id):
+    '''
+    Returns one of supported colors for matplotlib pyplot from cyclic array
+    '''
     colors = ['g', 'b', 'k', 'c', 'm', 'y', 'r']
     try:
         return colors[id]
